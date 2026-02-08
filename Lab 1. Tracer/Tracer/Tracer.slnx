@@ -1,3 +1,7 @@
 <Solution>
-  <Project Path="Tracer.csproj" />
+  <Project Path="Tracer.Core.Tests/Tracer.Core.Tests.csproj" Id="06115dcf-0fe3-4e8d-a18e-ae2f94f8ce42" />
+  <Project Path="Tracer.Core/Tracer.Core.csproj" Id="19e3b460-6aeb-416f-b616-ac78b6a042b6" />
+  <Project Path="Tracer.Example/Tracer.Example.csproj" Id="1bf03cc1-3e8d-42f4-86c6-8a9a41a21535" />
+  <Project Path="Tracer.Serialization.Abstractions/Tracer.Serialization.Abstractions.csproj" Id="fbfe79ad-1a09-4e3c-9928-af919d418075" />
+  <Project Path="Tracer.Serialization/Tracer.Serialization.csproj" Id="a9863b01-de1e-4b29-9ea9-033e1f49cf13" />
 </Solution>

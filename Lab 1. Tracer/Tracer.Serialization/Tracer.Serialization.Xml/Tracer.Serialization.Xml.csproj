@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy /Y /S &quot;$(TargetDir)*.*&quot; &quot;$(SolutionDir)..\Tracer\Tracer.Example\bin\Debug\net10.0\Plugins\&quot;" />
+	</Target>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Tracer\Tracer.Core\Tracer.Core.csproj" />
+	  <ProjectReference Include="..\..\Tracer\Tracer.Serialization.Abstractions\Tracer.Serialization.Abstractions.csproj" />
+	</ItemGroup>
+	
+</Project>
