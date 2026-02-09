@@ -1,4 +1,4 @@
-﻿using Tracer.Core;
+﻿using Tracer.Serialization.Abstractions;
 
 namespace Tracer.Serialization.Yaml.Dto;
 

@@ -1,6 +1,4 @@
-﻿using Tracer.Core;
-
-namespace Tracer.Serialization.Abstractions;
+﻿namespace Tracer.Serialization.Abstractions;
 
 public interface ITraceResultSerializer
 {

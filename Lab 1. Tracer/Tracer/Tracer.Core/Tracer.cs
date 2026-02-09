@@ -2,6 +2,7 @@
 using System.Diagnostics;
 
 using Tracer.Core.Impl;
+using Tracer.Serialization.Abstractions;
 
 namespace Tracer.Core;
 

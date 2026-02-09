@@ -1,6 +1,5 @@
 ﻿using System.Xml.Serialization;
 
-using Tracer.Core;
 using Tracer.Serialization.Abstractions;
 using Tracer.Serialization.Xml.Dto;
 

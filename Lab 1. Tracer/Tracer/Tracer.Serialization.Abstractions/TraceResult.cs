@@ -1,4 +1,4 @@
-﻿namespace Tracer.Core;
+﻿namespace Tracer.Serialization.Abstractions;
 
 public record TraceResult(IReadOnlyList<ThreadTraceResult> Threads);
 

@@ -1,5 +1,4 @@
 <Solution>
-  <Project Path="../Tracer/Tracer.Core/Tracer.Core.csproj" />
   <Project Path="../Tracer/Tracer.Serialization.Abstractions/Tracer.Serialization.Abstractions.csproj" />
   <Project Path="Tracer.Serialization.Json/Tracer.Serialization.Json.csproj" />
   <Project Path="Tracer.Serialization.Xml/Tracer.Serialization.Xml.csproj" />

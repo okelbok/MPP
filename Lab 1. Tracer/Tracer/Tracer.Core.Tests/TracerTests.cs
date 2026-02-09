@@ -1,5 +1,7 @@
 ﻿using FluentAssertions;
 
+using Tracer.Serialization.Abstractions;
+
 namespace Tracer.Core.Tests;
 
 public class TracerTests

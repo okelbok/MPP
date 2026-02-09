@@ -1,7 +1,6 @@
 ﻿using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-using Tracer.Core;
 using Tracer.Serialization.Abstractions;
 using Tracer.Serialization.Yaml.Dto;
 

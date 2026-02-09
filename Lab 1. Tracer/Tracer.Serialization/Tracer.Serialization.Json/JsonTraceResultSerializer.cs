@@ -1,6 +1,5 @@
 ﻿using System.Text.Json;
 
-using Tracer.Core;
 using Tracer.Serialization.Abstractions;
 using Tracer.Serialization.Json.Dto;
 

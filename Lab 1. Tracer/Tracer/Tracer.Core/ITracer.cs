@@ -1,4 +1,6 @@
-﻿namespace Tracer.Core;
+﻿using Tracer.Serialization.Abstractions;
+
+namespace Tracer.Core;
 
 public interface ITracer
 {

@@ -16,7 +16,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\Tracer\Tracer.Core\Tracer.Core.csproj" />
 	  <ProjectReference Include="..\..\Tracer\Tracer.Serialization.Abstractions\Tracer.Serialization.Abstractions.csproj" />
 	</ItemGroup>
 
