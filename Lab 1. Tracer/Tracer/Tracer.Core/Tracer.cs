@@ -63,7 +63,9 @@ public class Tracer : ITracer
 	{
 		var threadResults = new List<ThreadTraceResult>();
 
-		foreach (var entry in _threadContexts)
+		var snapshot = _threadContexts.ToArray();
+
+		foreach (var entry in snapshot)
 		{
 			int threadId = entry.Key;
 			ThreadContext context = entry.Value;
@@ -77,18 +79,25 @@ public class Tracer : ITracer
 		return new TraceResult(threadResults.AsReadOnly());
 	}
 
-	private IReadOnlyList<MethodTraceResult> MapMethods(List<MethodContext> methods)
+	private IReadOnlyList<MethodTraceResult> MapMethods(List<MethodContext> methodContexts)
 	{
 		var results = new List<MethodTraceResult>();
 
-		foreach (MethodContext method in methods)
+		MethodContext[] safeContexts;
+
+		lock (methodContexts)
 		{
-			var children = MapMethods(method.Children);
+			safeContexts = methodContexts.ToArray();
+		}
+
+		foreach (var context in safeContexts)
+		{
+			var children = MapMethods(context.Children);
 
 			results.Add(new MethodTraceResult(
-				method.MethodName,
-				method.ClassName,
-				method.Stopwatch.ElapsedMilliseconds,
+				context.MethodName,
+				context.ClassName,
+				context.Stopwatch.ElapsedMilliseconds,
 				children));
 		}
 

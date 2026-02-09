@@ -1,6 +1,4 @@
-﻿using System.Collections.Concurrent;
-
-namespace Tracer.Core;
+﻿namespace Tracer.Core;
 
 public record TraceResult(IReadOnlyList<ThreadTraceResult> Threads);
 
